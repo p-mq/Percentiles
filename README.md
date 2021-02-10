@@ -2,6 +2,7 @@
 R package to calculate (stratified) percentiles
 
 ## very short installation instructions
-* clone the 'percentiles' repo and locate the 'builds' folder
-* install the package using install.packages("path/to/percentiles_0.1.0.zip", repos=NULL)
+* clone the 'percentiles' repository
+* build the source or binary file using Rtools
+* install the package using install.packages("path/to/package_file", repos=NULL)
 * call library(percentiles) in your code and use like with any other package
