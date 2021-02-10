@@ -1,13 +1,13 @@
 Package: percentiles
 Type: Package
 Title: Calculate (stratified) percentiles
-Version: 0.2
+Version: 0.2.1
 Author: J. Peter Marquardt <peter@kmarquardt.de> [aut, cre]
 Maintainer: J. Peter Marquardt <peter@kmarquardt.de>
 Description: Calculate (stratified) percentiles on a data.frame
     Stratification will split the data.frame into subgroups and calculate percentiles for each independently.
 Depends: R (>= 4.0.0)
-Imports: plyr, dplyr, assertive.types, R6
+Imports: dplyr, assertive.types, R6
 License: GPL-2
 Encoding: UTF-8
 LazyData: true

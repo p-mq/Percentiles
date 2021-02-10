@@ -52,7 +52,7 @@ Stratified_percentile_calculator_generator <- R6::R6Class(
     #' @return void, but updates ..result_data field
     #'
     #' @import assertive.types
-    #' @import plyr
+    #' @import dplyr
     divide_and_calculate = function(){
       if (is.null(private$..current_stratification_characteristic)){
         # calculate results for current data and append to current results
@@ -60,7 +60,7 @@ Stratified_percentile_calculator_generator <- R6::R6Class(
           if(nrow(private$..raw_data) < 10){message('Warning: Calculated percentiles on a subset with less than 10 cases')}
           temp_result_data <- private$..raw_data
           temp_result_data[private$..output_column] <- calculate_percentiles(private$..raw_data, private$..value_column)
-          private$..result_data$data <- plyr::rbind.fill(private$..result_data$data, temp_result_data)
+          private$..result_data$data <- dplyr::bind_rows(private$..result_data$data, temp_result_data)
         }
       }
 

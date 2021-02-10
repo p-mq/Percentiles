@@ -9,7 +9,6 @@
 #' @param data A data.frame
 #' @param value_col character name of column containing values
 #'
-#' usethis::use_data(iris, internal = FALSE)
 #' @return A vector of numerics with percentile values of length of nrow(data)
 #'
 #' @example
