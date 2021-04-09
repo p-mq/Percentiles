@@ -23,12 +23,15 @@ Calculate percentiles for values in a data.frame while stratifying for other cha
 }
 \examples{
 data <- data.frame('values' = 100:1, 'group' = rep(c('A', 'B', NA, 'D'), 25))
-calculate_stratified_percentiles(data, 'values', 'group')
 calculate_stratified_percentiles(data, 'values', list(group = c('A', 'B', 'D')))
 calculate_stratified_percentiles(data, 'values', c('group'), use.na = TRUE)
 calculate_stratified_percentiles(data, 'values', list(group = c('A', 'C')), use.na=TRUE)
+# The following example will result in NA values caused by NAs in 'group'.
+# Therefore, it will return the percentile vector, but issue a warning.
+\donttest{calculate_stratified_percentiles(data, 'values', 'group')}
+
 
 }
 \author{
-Peter Marquardt
+J. Peter Marquardt
 }

@@ -3,5 +3,6 @@
 export(calculate_percentiles)
 export(calculate_stratified_percentiles)
 import(assertive.types)
+import(assertthat)
 import(dplyr)
 importFrom(R6,R6Class)

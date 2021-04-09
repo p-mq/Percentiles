@@ -53,6 +53,7 @@ Stratified_percentile_calculator_generator <- R6::R6Class(
     #'
     #' @import assertive.types
     #' @import dplyr
+    #' @import assertthat
     divide_and_calculate = function(){
       if (is.null(private$..current_stratification_characteristic)){
         # calculate results for current data and append to current results
