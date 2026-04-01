@@ -1,13 +1,17 @@
 Package: percentiles
 Type: Package
 Title: Calculate (Stratified) Percentiles
-Version: 0.2.2
-Author: J. Peter Marquardt <peter@kmarquardt.de> [aut, cre]
-Maintainer: J. Peter Marquardt <peter@kmarquardt.de>
+Version: 0.2.3
+Authors@R: c(person(given = "Dr J. Peter",
+            family = "Amin Marquardt",
+            role = c("aut", "cre"),
+            email = "peter@kmarquardt.de",
+            comment = c(ORCID = "0000-0002-5596-1357")
+            ))
 Description: Calculate (stratified) percentiles on a data.frame
     Stratification will split the data.frame into subgroups and calculate percentiles for each independently.
 Depends: R (>= 4.0.0)
-Imports: dplyr, assertive.types, assertthat, R6
+Imports: dplyr, assertthat, R6
 License: GPL-3
 Encoding: UTF-8
-RoxygenNote: 7.1.1
+RoxygenNote: 7.3.3

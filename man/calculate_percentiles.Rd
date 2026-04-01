@@ -17,6 +17,11 @@ A vector of numerics with percentile values of length of nrow(data)
 \description{
 Calculate percentiles for values in a data.frame
 }
+\examples{
+data <- data.frame('values' = 100:1, 'group' = rep(c('A', 'B', 'C', 'D'), 25))
+calculate_percentiles(data, 'values')
+
+}
 \author{
 Peter Marquardt
 }

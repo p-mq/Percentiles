@@ -2,11 +2,11 @@
 % Please edit documentation in R/Stratified_percentile_calculator.R
 \name{Stratified_percentile_calculator_generator}
 \alias{Stratified_percentile_calculator_generator}
-\title{R6 Class representing a compund of data and methods used to calculate stratified percentiles}
+\title{R6 Class representing a compound of data and methods used to calculate stratified percentiles}
 \description{
-R6 Class representing a compund of data and methods used to calculate stratified percentiles
+R6 Class representing a compound of data and methods used to calculate stratified percentiles
 
-R6 Class representing a compund of data and methods used to calculate stratified percentiles
+R6 Class representing a compound of data and methods used to calculate stratified percentiles
 }
 \details{
 A calculator has:
@@ -28,14 +28,14 @@ A calculator has:
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-new}{\code{Stratified_percentile_calculator_generator$new()}}
-\item \href{#method-divide_and_calculate}{\code{Stratified_percentile_calculator_generator$divide_and_calculate()}}
-\item \href{#method-clone}{\code{Stratified_percentile_calculator_generator$clone()}}
+\item \href{#method-Stratified_percentile_calculator-new}{\code{Stratified_percentile_calculator_generator$new()}}
+\item \href{#method-Stratified_percentile_calculator-divide_and_calculate}{\code{Stratified_percentile_calculator_generator$divide_and_calculate()}}
+\item \href{#method-Stratified_percentile_calculator-clone}{\code{Stratified_percentile_calculator_generator$clone()}}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-new"></a>}}
-\if{latex}{\out{\hypertarget{method-new}{}}}
+\if{html}{\out{<a id="method-Stratified_percentile_calculator-new"></a>}}
+\if{latex}{\out{\hypertarget{method-Stratified_percentile_calculator-new}{}}}
 \subsection{Method \code{new()}}{
 Create a new Stratified_percentile_calculator object.
 \subsection{Usage}{
@@ -74,8 +74,8 @@ A new `Stratified_percentile_calculator` object.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-divide_and_calculate"></a>}}
-\if{latex}{\out{\hypertarget{method-divide_and_calculate}{}}}
+\if{html}{\out{<a id="method-Stratified_percentile_calculator-divide_and_calculate"></a>}}
+\if{latex}{\out{\hypertarget{method-Stratified_percentile_calculator-divide_and_calculate}{}}}
 \subsection{Method \code{divide_and_calculate()}}{
 recursively calculate stratified percentiles on data.frame
 Updates following private fields:
@@ -92,8 +92,8 @@ void, but updates ..result_data field
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-Stratified_percentile_calculator-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-Stratified_percentile_calculator-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{

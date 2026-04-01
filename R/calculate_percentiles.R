@@ -1,5 +1,5 @@
 # Calculating (stratified) percentiles of data
-# (c) Peter Marquardt, 2020
+# (c) J. Peter Amin Marquardt, 2026
 
 
 #' Calculate percentiles
@@ -11,13 +11,12 @@
 #'
 #' @return A vector of numerics with percentile values of length of nrow(data)
 #'
-#' @example
+#' @examples
 #' data <- data.frame('values' = 100:1, 'group' = rep(c('A', 'B', 'C', 'D'), 25))
 #' calculate_percentiles(data, 'values')
 #'
 
 #' @export
-#' @import assertive.types
 #'
 #' @author Peter Marquardt
 calculate_percentiles <- function(data, value_col){
@@ -81,7 +80,6 @@ calculate_percentiles <- function(data, value_col){
 #'
 #' @export
 #'
-#' @import assertive.types
 #' @import dplyr
 #'
 #' @author J. Peter Marquardt
@@ -104,7 +102,7 @@ calculate_stratified_percentiles <- function(data, value_col, stratify_by, use.n
     }
   }
   else{
-    assertive.types::assert_is_list(stratify_by)
+    stopifnot("'stratify_by' must be a list" = is.list(stratify_by))
     strat_list <- stratify_by
   }
 

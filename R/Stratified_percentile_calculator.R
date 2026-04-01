@@ -1,7 +1,7 @@
 # Class allowing recursive calculation of stratified percentiles
-# (c) Peter Marquardt, 2020
+# (c) J. Peter Amin Marquardt, 2026
 
-#' R6 Class representing a compund of data and methods used to calculate stratified percentiles
+#' R6 Class representing a compound of data and methods used to calculate stratified percentiles
 #'
 #' A calculator has:
 #'  - raw_data representing the data.frame passed in for calculation
@@ -51,7 +51,6 @@ Stratified_percentile_calculator_generator <- R6::R6Class(
     #' - ..remaining_stratification_characteristics
     #' @return void, but updates ..result_data field
     #'
-    #' @import assertive.types
     #' @import dplyr
     #' @import assertthat
     divide_and_calculate = function(){
@@ -112,7 +111,7 @@ Stratified_percentile_calculator_generator <- R6::R6Class(
         return(private$..raw_data)
       }
       else{
-        assertive.types::assert_is_data.frame(value)
+        stopifnot("'value' must be a dtaa frame" = is.data.frame(value))
         private$..raw_data <- value
       }
     },
@@ -124,7 +123,7 @@ Stratified_percentile_calculator_generator <- R6::R6Class(
         return(private$..result_data)
       }
       else{
-        assertive.types::assert_is_data.frame(value)
+        stopifnot("'value' must be a dtaa frame" = is.data.frame(value))
         private$..result_data <- value
       }
     },
